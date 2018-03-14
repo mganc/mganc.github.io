@@ -32,6 +32,10 @@
 		$(this).parent().toggleClass('open-drop');
 	});
 
+	// Random background image
+	var images = ["library-of-congress.jpg", "city-water.jpg", "cycling.jpg", "washington-monument.jpg", "water.jpg"];
+	 $('#random-background').css({'background-image': 'url(img/' + images[Math.floor(Math.random() * images.length)] + ')'});
+
 	// On Scroll
 	$(window).on('scroll', function() {
 		var wScroll = $(this).scrollTop();
